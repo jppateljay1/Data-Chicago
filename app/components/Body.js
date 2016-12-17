@@ -13,17 +13,16 @@ class Body extends Component{
     }
     render(){
         return(
-            <View>
-             {this.props.testMenu}
+            <View style={styles.bodyStyle}>
+             {this.props.content}
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    headerStyle:{
-        paddingTop: 20,
-        height: viewStyles.header.height,
+    bodyStyle:{
+        height: viewStyles.body.height,
         backgroundColor: "black",
     }
 })

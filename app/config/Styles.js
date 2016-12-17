@@ -12,17 +12,19 @@ function getViewHeight(){
     }
 
     function getHeaderHeight(){
-        return(Math.round(window.height * .1))
+        return(Math.round(window.height * .08))
     }
 
     let ret = {}
     let headerHeight = getHeaderHeight();
     let footerHeight = getFooterHeight();
-    let bodyHeight = window.height - (headerHeight + footerHeight)
+    let headerTopBarHeight = 30;
+    let bodyHeight = window.height - (headerHeight + footerHeight + headerTopBarHeight)
 
     ret["headerHeight"] = headerHeight
     ret["footerHeight"] = footerHeight
     ret["bodyHeight"] = bodyHeight
+    ret["headerTopBar"] = headerTopBarHeight
 
     return ret
 }
@@ -31,7 +33,8 @@ const viewHeight = getViewHeight();
 
 export const viewStyles = {
     header: {
-        height: viewHeight.headerHeight
+        height: viewHeight.headerHeight,
+        topBar: viewHeight.headerTopBar
     },
     body: {
         height: viewHeight.bodyHeight

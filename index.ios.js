@@ -8,7 +8,7 @@ import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 import FBButton from './app/components/FBButton'
 import AppMap from './app/components/Map'
 import MapScreen from './app/screens/MapScreen'
-import SideMenu2 from './app/tests/SideMenu2'
+import SideMenu from './app/components/SideMenu'
 
 export default class dataChicago extends Component {
   //style={styles.container}>
@@ -16,9 +16,12 @@ export default class dataChicago extends Component {
   render() {
     // <AppMap />
     // <FBButton />
+    // return (
+    //   <MapScreen />
+    // );
     return (
-      <MapScreen />
-    );
+      <SideMenu />
+    )
   }                         
 }
 

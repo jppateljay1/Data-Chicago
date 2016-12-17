@@ -4,6 +4,8 @@
 import React, { Component } from 'react'
 import { View, StyleSheet } from 'react-native'
 
+import Drawer from 'react-native-drawer'
+
 //internal modules
 import Body from '../components/Body'
 import Header from '../components/Header'
@@ -13,15 +15,12 @@ import { viewStyles } from '../config/Styles'
 
 class MapScreen extends Component{
 
-    constructor(props){
-        super(props)
-    }
-    
     render(){
+        let body = <Map styles={{bodyHeight: styles.bodyHeight}} />
         return(
             <View>
-                <Header />
-                <Map styles={{bodyHeight: styles.bodyHeight}} />
+                <Header openDrawer={this.props.openDrawer.bind(this)} />
+                <Body content={body} />
                 <Footer />
             </View>
 
