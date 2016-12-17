@@ -1,12 +1,12 @@
 "use strict";
 
 import React, { Component } from 'react';
-import { MapView, StyleSheet } from 'react-native';
+import { MapView, PropTypes, StyleSheet } from 'react-native';
 
 class Map extends Component {
 
-    constructor(props){
-        super(props)
+    static propTypes = {
+        bodyHeight: React.PropTypes.node.isRequired,
     }
 
     getMapStyle(){
@@ -44,7 +44,7 @@ class Map extends Component {
             longitudeDelta: 0.0421,
           }}
           customMapStyle={this.getMapStyle}
-          style={this.props.styles.bodyHeight}
+          style={this.props.bodyHeight}
           showsUserLocation={true}
         />
     );

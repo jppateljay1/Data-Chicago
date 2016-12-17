@@ -15,9 +15,7 @@ class Header extends Component{
     constructor(props){
         super(props)
     }
-    // <Button
-    //     nPress={this.props.openDrawer}
-    //     text="Open Drawer" />
+    
     render(){
         return(
             <View>
