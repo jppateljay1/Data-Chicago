@@ -1,7 +1,10 @@
-0.0.1
+0.0.1 (12/17/2016)
 - basic side bar added (no content yet added)
 - added a new file 'reference_log.txt' to log all the commits
 - added header content
 -- header has a menu bar that opens and closes the menu when being pressed
 -- a title added
 -- a bell added for notification (future)
+
+0.0.2 ()
+-

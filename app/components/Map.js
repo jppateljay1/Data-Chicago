@@ -1,49 +1,24 @@
 "use strict";
 
 import React, { Component } from 'react';
-import { MapView, PropTypes, StyleSheet } from 'react-native';
+import { PropTypes, StyleSheet } from 'react-native';
+import MapView from 'react-native-maps'
 
 class Map extends Component {
 
     static propTypes = {
         bodyHeight: React.PropTypes.node.isRequired,
     }
-
-    getMapStyle(){
-        return(mapStyle = [
-            {
-                "featureType": "road.arterial",
-                "elementType": "labels",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            },
-            {
-                "featureType": "road.highway",
-                "elementType": "labels",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            },
-            {
-                "featureType": "road.local",
-                "stylers": [{
-                    "visibility": "off"
-                }]
-            }
-        ])
-    }
-  
+    
   render() {
     return (
         <MapView
           initialRegion={{
-            latitude: 37.78825,
-            longitude: -122.4324,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
+            latitude: 41.8345,
+            longitude: -87.7994,
+            latitudeDelta: 0.6139,
+            longitudeDelta: 1.7248,
           }}
-          customMapStyle={this.getMapStyle}
           style={this.props.bodyHeight}
           showsUserLocation={true}
         />
