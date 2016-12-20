@@ -9,7 +9,7 @@ class Map extends Component {
     static propTypes = {
         bodyHeight: React.PropTypes.node.isRequired,
     }
-    
+
   render() {
     return (
         <MapView

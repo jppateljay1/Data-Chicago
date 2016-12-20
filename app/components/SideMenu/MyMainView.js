@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 
-import SliderJS from 'react-native-slider';
+// import SliderJS from 'react-native-slider';
 
 import styles from './styles';
 import Button from './Button';

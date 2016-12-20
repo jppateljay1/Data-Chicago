@@ -16,12 +16,11 @@ class MapScreen extends Component{
 
     render(){
         return(
-            <View>
+            <View style={styles.genericStyle}>
                 <Header openDrawer={this.props.openDrawer.bind(this)} />
                 <Body content={this.props.content} />
                 <Footer />
             </View>
-
         )
     }
 }
@@ -29,6 +28,8 @@ class MapScreen extends Component{
 const styles = StyleSheet.create({
     bodyHeight:{
         height: viewStyles.body.height
+    },
+    genericStyle:{
     }
 })
 

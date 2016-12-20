@@ -15,10 +15,10 @@ class Header extends Component{
     constructor(props){
         super(props)
     }
-    
+
     render(){
         return(
-            <View>
+            <View style={styles.headerContainer}>
                 <DisplayTopBar topBarStyles={styles.topBarStyle} />
                 <HeaderContent 
                     openDrawer={this.props.openDrawer.bind(this)} 
@@ -29,6 +29,9 @@ class Header extends Component{
 }
 
 const styles = StyleSheet.create({
+    headerContainer:{
+        opacity: 1,
+    },
     headerContentStyle:{
         flexDirection: 'row',
         height: viewStyles.header.height,

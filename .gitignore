@@ -1,9 +1,14 @@
+# reference log
+reference_log.txt
+
+
 # OSX
 #
 .DS_Store
 
 # Xcode
 #
+ios/
 build/
 *.pbxuser
 !default.pbxuser

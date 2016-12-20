@@ -8,7 +8,7 @@ import { StyleSheet, View } from 'react-native'
 import { viewStyles } from '../config/Styles'
 
 class Body extends Component{
-    
+
     render(){
         return(
             <View style={styles.bodyStyle}>
@@ -17,6 +17,8 @@ class Body extends Component{
         )
     }
 }
+
+// 7plus 6 plus, note 4(50-100)
 
 const styles = StyleSheet.create({
     bodyStyle:{
