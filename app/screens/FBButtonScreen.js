@@ -7,19 +7,18 @@ import { View, StyleSheet } from 'react-native'
 import Drawer from 'react-native-drawer'
 
 //internal modules
-import GenericScreen from './GenericScreen'
-import Map from '../components/Map'
+import FBButton from '../components/FBButton'
 import { viewStyles } from '../config/Styles'
 
-class MapScreen extends Component{
+class FBButtonScreen extends Component{
 
     render(){
-        console.log('MapScreen')
-        let body = <Map bodyHeight={styles.bodyHeight}/>
+        console.log('FBButtonScreen')
+        let body = <FBButton />
         return(
-            <GenericScreen 
-            openDrawer={this.props.openDrawer.bind(this)}
-            content={body}/>
+            <View>
+                {body}
+            </View>
         )
     }
 }
@@ -30,4 +29,4 @@ const styles = StyleSheet.create({
     }
 })
 
-module.exports = MapScreen
+module.exports = FBButtonScreen

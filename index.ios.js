@@ -5,22 +5,13 @@ import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
 // internal module
-import FBButton from './app/components/FBButton'
-import AppMap from './app/components/Map'
-import MapScreen from './app/screens/MapScreen'
-import SideMenu from './app/components/SideMenu'
+import AppNavigator from './app/navigation/AppNavigator'
 
 export default class dataChicago extends Component {
-  //style={styles.container}>
   
   render() {
-    // <AppMap />
-    // <FBButton />
-    // return (
-    //   <MapScreen />
-    // );
     return (
-      <SideMenu />
+      <AppNavigator initialRoute={{ident: "SideMenu"}}/>
     )
   }                         
 }

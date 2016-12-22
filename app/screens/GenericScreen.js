@@ -15,6 +15,7 @@ import { viewStyles } from '../config/Styles'
 class MapScreen extends Component{
 
     render(){
+        console.log("GenericScreen")
         return(
             <View style={styles.genericStyle}>
                 <Header openDrawer={this.props.openDrawer.bind(this)} />

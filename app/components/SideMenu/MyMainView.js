@@ -8,6 +8,7 @@ import { View } from 'react-native';
 import styles from './styles';
 import Button from './Button';
 import MapScreen from '../../screens/MapScreen'
+import AppNavigator from '../../navigation/AppNavigator'
 
 class MyMainView extends Component {
   setParentState(args){
@@ -15,6 +16,7 @@ class MyMainView extends Component {
   }
 
   render(){
+    console.log('MyMainView')
     // this is where the app navigator goes
     // instead of <MapScreen />
     return (

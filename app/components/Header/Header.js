@@ -9,14 +9,13 @@ import DisplayTopBar from './DisplayTopBar'
 import HeaderContent from './HeaderContent'
 import { viewStyles } from '../../config/Styles'
 
-console.log("viewStyles", viewStyles)
-
 class Header extends Component{
     constructor(props){
         super(props)
     }
 
     render(){
+        console.log('Header')
         return(
             <View style={styles.headerContainer}>
                 <DisplayTopBar topBarStyles={styles.topBarStyle} />

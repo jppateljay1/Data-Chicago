@@ -69,9 +69,13 @@ class SideMenu extends Component {
   }
 
   render() {
-    var controlPanel = <MyControlPanel closeDrawer={() => {
-      this.drawer.close();
-    }} />
+    console.log("side menu")
+    var controlPanel = <MyControlPanel 
+                          navigatorProps={this.props.navigator} 
+                          closeDrawer={() => {
+                            this.drawer.close();
+                          }} 
+                        />
     return (
       <Drawer
         ref={c => this.drawer = c}
