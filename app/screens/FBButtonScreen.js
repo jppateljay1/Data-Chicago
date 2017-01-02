@@ -16,7 +16,7 @@ class FBButtonScreen extends Component{
         console.log('FBButtonScreen')
         let body = <FBButton />
         return(
-            <View>
+            <View style={styles.bodyHeight}>
                 {body}
             </View>
         )
@@ -25,7 +25,8 @@ class FBButtonScreen extends Component{
 
 const styles = StyleSheet.create({
     bodyHeight: {
-        height: viewStyles.body.height
+        height: viewStyles.body.height,
+        paddingTop: 100,
     }
 })
 

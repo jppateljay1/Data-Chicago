@@ -4,6 +4,10 @@ reference_log.txt
 # database stuff
 data/
 
+# Cocoapods
+#
+Pods/
+
 # OSX
 #
 .DS_Store
