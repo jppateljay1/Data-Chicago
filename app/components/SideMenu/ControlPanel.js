@@ -1,13 +1,13 @@
 'use strict'
 
 import React, { Component } from 'react';
-import { Navigator, SwitchIOS, Text, View } from 'react-native' 
+import { Navigator, SwitchIOS, Text, View } from 'react-native'
 
 import styles from './styles';
 import Button from './Button';
-import AppNavigator from '../../navigation/AppNavigator'
+import AppNavigator from '../../navigation/AppNavigator';
 
-// this.props.navigatorProps to access navigator from previous  
+// this.props.navigatorProps to access navigator from previous
 
 export default class ControlPanel extends Component {
   render() {

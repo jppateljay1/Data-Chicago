@@ -2,7 +2,7 @@
 'use strict';
 
 import React, { Component } from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, Text } from 'react-native'
 
 import Drawer from 'react-native-drawer'
 
@@ -10,6 +10,7 @@ import Drawer from 'react-native-drawer'
 import GenericScreen from './GenericScreen'
 import Map from '../components/Map'
 import { viewStyles } from '../config/Styles'
+import Youtube from '../navigation/Youtube'
 
 class MapScreen extends Component{
 
@@ -17,7 +18,7 @@ class MapScreen extends Component{
         console.log('MapScreen')
         let body = <Map bodyHeight={styles.bodyHeight}/>
         return(
-            <GenericScreen 
+            <GenericScreen
             openDrawer={this.props.openDrawer.bind(this)}
             content={body}/>
         )

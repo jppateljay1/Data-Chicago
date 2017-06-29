@@ -8,6 +8,9 @@ import { StyleSheet, Text, View, Navigator } from 'react-native';
 import MapScreen from '../screens/MapScreen'
 import FBButtonScreen from '../screens/FBButtonScreen'
 import SideMenu from '../../app/components/SideMenu'
+import Youtube from './Youtube'
+
+// make changes to ControlPanel.js to display Youtube instead of FBButtonScreen
 
 class AppNavigator extends Component {
 
@@ -21,10 +24,15 @@ class AppNavigator extends Component {
       return(
         <MapScreen {...globalNavigatorProps} />
       )
-    
+
       case "FBButtonScreen":
       return(
         <FBButtonScreen {...globalNavigatorProps} />
+      )
+
+      case 'Youtube':
+      return(
+        <Youtube url={'WLlK1LRj7aI'} {...globalNavigatorProps} />
       )
 
       case "SideMenu":
@@ -45,7 +53,7 @@ class AppNavigator extends Component {
         initialRoute={this.props.initialRoute}
         ref="appNavigator"
         style={styles.navigatorStyles}
-        renderScene={this._renderScene} 
+        renderScene={this._renderScene}
         configureScene={(route) => ({
           ...route.sceneConfig || Navigator.SceneConfigs.FloatFromRight
         })}
